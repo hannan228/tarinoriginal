@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backimage"
+    tools:context=".StationDescription">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:id="@+id/station_title"
+        android:textColor="@color/dark_orange"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/station_title"
+        android:scrollbarStyle="outsideOverlay"
+        android:verticalScrollbarPosition="right"
+        android:scrollbarThumbVertical="@drawable/scroll_thumb_customize"
+        android:scrollbarSize="20dp"
+        android:id="@+id/viewj"
+        android:alignmentMode="alignMargins"
+        android:background="@drawable/boarder"
+
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/station_info"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            ></TextView>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
