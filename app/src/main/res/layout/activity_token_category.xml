@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimage"
+    android:orientation="horizontal"
+    tools:context="train.example.orangelinetrain.token_category"
+    >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnOrderPreserved="false"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:alignmentMode="alignMargins"
+        android:layout_marginTop="150dp"
+        android:rowCount="5"
+        android:columnCount="1"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/token_basics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:onClick="onClicks"
+            android:background="@drawable/boarder"
+
+            >
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ticket_pro" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:textSize="30dp"
+                android:paddingLeft="10dp"
+                android:background="@color/dark_orange"
+                android:text="Token's basic information"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                >
+            </TextView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/token_machine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="onClicks"
+            android:background="@drawable/boarder"
+
+            >
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ticket_pro" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:textSize="30dp"
+                android:paddingLeft="10dp"
+                android:background="@color/dark_orange"
+                android:text="How to buy tokens through machine"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                >
+            </TextView>
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>

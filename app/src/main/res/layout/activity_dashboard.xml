@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backimage"
-    tools:context=".Dashboard">
+    tools:context="train.example.orangelinetrain.Dashboard">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:layout_marginRight="20dp"
             >
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
                 android:id="@+id/change_language"
                 android:layout_height="wrap_content"
@@ -37,10 +37,9 @@
                     android:layout_width="62dp"
                     android:layout_height="62dp"
                     android:layout_alignParentLeft="true"
-
                     android:src="@drawable/changelanguage"/>
 
-            </androidx.cardview.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
 
         </RelativeLayout>
 
@@ -164,7 +163,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/call_us"
+                android:id="@+id/update1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -184,13 +183,13 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/callus">
+                        android:src="@drawable/updates">
 
                     </ImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ask Us"
+                        android:text="UPDATES"
                         android:textSize="18sp"
                         android:textColor="#6f6f6f"
                         android:layout_marginTop="12dp"/>
@@ -273,7 +272,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/share_Experience"
+                android:id="@+id/scholarship"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -293,13 +292,13 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/shareexperience">
+                        android:src="@drawable/scholarship">
 
                     </ImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Share Experience"
+                        android:text="Scholarship"
                         android:textSize="18sp"
                         android:textColor="#6f6f6f"
                         android:layout_marginTop="12dp"/>
@@ -345,6 +344,18 @@
             </androidx.cardview.widget.CardView>
 
         </GridLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ad_View"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner">
+        </com.google.android.gms.ads.AdView>
 
     </LinearLayout>
 

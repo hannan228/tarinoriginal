@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backimage"
-    tools:context=".Dashboard">
+    tools:context="train.example.orangelinetrain.StationNumbers">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -56,6 +56,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st1"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -92,6 +93,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st2"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -128,6 +130,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st3"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -164,6 +167,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st4"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -200,6 +204,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st5"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -236,6 +241,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st6"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -269,9 +275,34 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+        </GridLayout>
 
-            <androidx.cardview.widget.CardView
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ad_View"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner">
+        </com.google.android.gms.ads.AdView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:alignmentMode="alignMargins"
+            android:rowCount="5"
+            android:columnCount="2"
+            >
+
+        <androidx.cardview.widget.CardView
                 android:id="@+id/st7"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -308,6 +339,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st8"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -344,6 +376,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st9"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -380,6 +413,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st10"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -416,6 +450,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st11"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -452,6 +487,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st12"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -485,9 +521,35 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+        </GridLayout>
 
-            <androidx.cardview.widget.CardView
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ad_View1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner">
+        </com.google.android.gms.ads.AdView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:alignmentMode="alignMargins"
+            android:rowCount="5"
+            android:columnCount="2"
+            >
+
+
+        <androidx.cardview.widget.CardView
                 android:id="@+id/st13"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -524,6 +586,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st14"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -560,6 +623,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st15"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -596,6 +660,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st16"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -633,6 +698,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st17"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -670,6 +736,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st18"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -703,10 +770,34 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+        </GridLayout>
 
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ad_View2"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner">
+        </com.google.android.gms.ads.AdView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:alignmentMode="alignMargins"
+            android:rowCount="5"
+            android:columnCount="2"
+            >
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st19"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -744,6 +835,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st20"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -781,6 +873,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st21"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -818,6 +911,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st22"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -855,6 +949,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st23"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -892,6 +987,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st24"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -929,6 +1025,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st25"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -966,6 +1063,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/st26"
+                android:onClick="onClicks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -999,6 +1097,18 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </GridLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ad_View3"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner">
+        </com.google.android.gms.ads.AdView>
 
     </LinearLayout>
 

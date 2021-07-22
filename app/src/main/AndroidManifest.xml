@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="train.example.orangelinetrain">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OrangeLineTrain"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".updates"></activity>
+        <activity android:name=".YouTubeLinks" />
+        <activity android:name=".News" />
+        <activity android:name=".StationFurtherInformation" />
+        <activity android:name=".Ali_Town" />
+        <activity android:name=".Scholarship_News" />
+        <activity android:name=".Join_Us" />
+        <activity android:name=".Other_Jobs" />
+        <activity android:name=".Station_Info" />
+        <activity android:name=".token_category" />
+        <activity android:name=".StationDescription" />
+        <activity android:name=".StationNumbers" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".LoginScreen" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8208114077943509~3706820221" />
+    </application>
+
+</manifest>
